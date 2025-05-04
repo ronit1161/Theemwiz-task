@@ -500,7 +500,7 @@ header {
   }
 }
 
-/* ###### Pricing section ####### */
+/* ###### Get started section ####### */
 
 
 .get-started-section{
@@ -552,25 +552,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ###### Pricing section ####### */
 
 .pricing-section {
@@ -587,14 +568,14 @@ header {
 .pricing-cards {
   display: flex;
   align-items: flex-end;
-  flex-wrap: wrap;
 }
 
 .pricing-card {
+  width: 100%;
   background: #fdf0e9;
   border: 1px solid #f7c6b2;
   padding: 4rem;
-  width: 33%;
+  /* width: 33%; */
 }
 
 .pricing-card h3 {
@@ -656,24 +637,6 @@ header {
   border-radius: 50px;
   font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
