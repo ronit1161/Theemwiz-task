@@ -3,20 +3,60 @@
 @media (max-width: 768px) {
 
     /* ######### Landing Page########### */
+/* 
+    div{
+        border: 2px solid black;
+    } */
+
     .nav-links{
         display: none;
     }
 
+
+    /* ################ Hero section ################ */
+
     .hero{
-        padding: 4rem;
+        padding: 2rem;
+        margin-top: -1rem;
     }
 
-    .hero img{
-        width: 30%;
+    .hero-section{
+        padding-top: 0;
     }
+
+    .hero-content h1{
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+    }
+
+    .star-svg{
+        display: none;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    .hero-small-div {
+        margin-top: 5rem;
+    }
+
+    /* ################ About section ################ */
 
     .video img{
         width: 80%;
+    }
+
+    .about-section{
+        padding: 5rem 2rem;
+    }
+
+    .about{
+        gap: 3rem;
+    }
+
+    .about h2{
+        font-size: 4rem;
     }
 
     .about img{
@@ -58,6 +98,10 @@
 
     .get-started{
         flex-direction: column;
+    }
+
+    .get-started-content img{
+        width: 100%;
     }
 
     .arrow-div{
