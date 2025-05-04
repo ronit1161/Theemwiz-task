@@ -500,8 +500,53 @@ header {
   }
 }
 
+/* ###### Pricing section ####### */
 
 
+.get-started-section{
+  background-color: #28293E;
+  padding: 5rem 0 15rem 0;
+}
+
+.get-started{
+  background-color: #FDF0E9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  gap: 2rem;
+  padding: 5rem 10rem 1rem 10rem;
+}
+
+.get-started-content{
+  position: relative;
+}
+
+.get-started-content h1{
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.get-started-content button{
+  background-color: #EF6D58;
+  font-size: 1.4rem;
+  border: none;
+}
+
+
+.girl-image{
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  transform: translate(50%);
+}
+
+.star-gift{
+  position: absolute;
+  top: -125%;
+  left: -5%;
+}
 
 
 
