@@ -320,6 +320,185 @@ header {
 
 
 
+/* ###### Portfolio section ####### */
+
+.portfolio-section{
+  background-color: #28293e;
+}
+
+.portfolio {
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.portfolio h1{
+  font-size: 5.6rem;
+  font-weight: 800;
+  margin: 2rem 0;
+}
+
+.portfolio-tabs{
+  width: 100%;
+  margin: 7rem 0;
+}
+
+.tab-1{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tab-2{
+  display: flex;
+  gap: 2rem;
+}
+
+
+.left-side-tab{
+  position: relative;
+  width: 40%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.right-side-tab {
+  position: relative;
+  width: 60%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.portfolio-tabs img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tab-content{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+}
+
+.tab-content button{
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5rem;
+}
+
+.tab-content h2{
+  font-size: 4rem;
+}
+
+.expolre-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expolre-button .button{
+  border: 1px solid rgba(255, 255, 255, 0.2957);
+  width: fit-content;
+}
+
+
+
+
+/* ###### Our team section ####### */
+
+.team-section {
+  background-color: #28293E;
+  padding-bottom: 10rem;
+}
+
+.team-header h2 {
+  font-size: 5.6rem;
+  font-weight: 800;
+  margin: 2rem 0;
+}
+
+.team-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.slider-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.team-card {
+  flex: 0 0 23.5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.person-img-div{
+  width: 100%;
+  height: 27rem;
+  border: 1px solid #3A3C56;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.team-card h3 {
+  font-size: 2.4rem;
+  text-align: start;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.team-card p {
+  font-size: 1.6rem;
+  text-align: start;
+  color: #FFFFFFA3;
+}
+
+/* Arrows */
+.arrow {
+  background-color: #28293E;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .team-card {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-card {
+    flex: 0 0 80%;
+  }
+}
 
 
 
@@ -337,7 +516,17 @@ header {
 
 
 
-/* ###### FAQ section ####### */
+
+
+
+
+
+
+
+
+
+
+/* ###### Pricing section ####### */
 
 .pricing-section {
   padding: 6rem 0;

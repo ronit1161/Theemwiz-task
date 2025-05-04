@@ -13,3 +13,15 @@ faqItems.forEach((item) => {
     item.querySelector(".arrow-icon").src = "./assets/images/arrow-down.svg";
   });
 });
+
+
+
+// Slider scroll logic
+function scrollSlider(direction) {
+  const slider = document.getElementById("sliderWrapper");
+  const cardWidth = slider.querySelector(".team-card").offsetWidth + 20;
+  slider.scrollBy({
+    left: direction * cardWidth,
+    behavior: 'smooth'
+  });
+}
