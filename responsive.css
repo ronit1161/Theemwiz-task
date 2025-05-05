@@ -6,6 +6,18 @@
     border: 2px solid black;
   } */
 
+  .navbar a{
+    display: none;
+  }
+
+  .navbar{
+    padding: 2rem;
+}
+
+  .fa-bars{
+    display: block;
+  }
+
   .nav-links {
     display: none;
   }
@@ -40,8 +52,13 @@
 
   /* ################ About section ################ */
 
+  .video{
+    width: 100%;
+    /* padding: 10rem; */
+  }
+
   .video img {
-    width: 80%;
+    width: 70%;
   }
 
   .about-section {

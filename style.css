@@ -75,6 +75,14 @@ header {
   background-color: #28293e;
 }
 
+.fa-bars{
+  display: none;
+  font-size: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.296);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -303,9 +311,18 @@ header {
 }
 
 .video{
+  background-image: url('./assets/images/video.svg');
+  background-size: cover;
   border-radius: 6px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 20rem;
   overflow: hidden;
+}
+
+.video img{
+  width: 90%;
 }
 
 .video-content{
@@ -485,6 +502,16 @@ header {
   background-color: #28293E;
   border: none;
   cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  border: 1px solid #3A3C56;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.arrow-div{
+  display: flex;
+  gap: 2rem;
 }
 
 /* ###### Get started section ####### */
@@ -803,6 +830,10 @@ header {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub-footer {
