@@ -793,6 +793,12 @@ header {
   width: 100%;
 }
 
+
+.contact-form-2{
+  display: none;
+}
+
+
 /* ###### About section ####### */
 
 .footer-main {

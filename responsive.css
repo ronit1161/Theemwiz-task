@@ -2,24 +2,20 @@
 @media (max-width: 768px) {
   /* ######### Landing Page########### */
 
-  /* div {
-    border: 2px solid black;
-  } */
 
-  .navbar a{
+  .navbar a,
+  .nav-links,
+  .star-svg,
+  .portfolio-section .total-work {
     display: none;
   }
 
-  .navbar{
+  .navbar {
     padding: 2rem;
-}
-
-  .fa-bars{
-    display: block;
   }
 
-  .nav-links {
-    display: none;
+  .fa-bars {
+    display: block;
   }
 
   /* ################ Hero section ################ */
@@ -37,11 +33,6 @@
     font-size: 5.6rem;
     line-height: 6.4rem;
   }
-
-  .star-svg {
-    display: none;
-  }
-
   .hero-img {
     width: 100%;
   }
@@ -52,9 +43,9 @@
 
   /* ################ About section ################ */
 
-  .video{
+  .video {
     width: 100%;
-    /* padding: 10rem; */
+    padding: 5rem 10rem;
   }
 
   .video img {
@@ -81,30 +72,23 @@
     flex-direction: column-reverse;
   }
 
-  .about {
+  .about,
+  .sub-about,
+  .workflow,
+  .tab-1,
+  .tab-2,
+  .faq-section {
     flex-direction: column;
   }
-
-  .sub-about {
-    flex-direction: column;
-  }
-
   /* ################ Workflow section ################ */
 
-  .workflow .right-side {
-    width: 100%;
-  }
-
+  .workflow .right-side,
   .workflow .left-side {
     width: 100%;
   }
 
   .workflow-section {
     padding: 0 2rem;
-  }
-
-  .workflow {
-    flex-direction: column;
   }
 
   /* ################ Video section ################ */
@@ -128,14 +112,6 @@
     font-size: 4rem;
   }
 
-  .portfolio-section .total-work {
-    display: none;
-  }
-
-  .tab-1,
-  .tab-2 {
-    flex-direction: column;
-  }
 
   .left-side-tab,
   .right-side-tab {
@@ -191,27 +167,33 @@
   }
 
   /* ################ Pricing section ################ */
-  
-  .pricing-section{
-      padding: 0 2rem;
-      margin-top: 8rem;
-    }
-    
-    .arrow-div {
-        display: none;
-    }
-    
-    .pricing-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-      /* ################ Pricing section ################ */
-    
-  .faq-section {
-    flex-direction: column;
+
+  .pricing-section {
+    padding: 0 2rem;
+    margin-top: 8rem;
   }
-    
+
+  .arrow-div {
+    display: none;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ################ Pricing section ################ */
+
+  .contact-form-2 {
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .contact-form-2 .contact-form{
+    width: 100%;
+  }
+
   .faq-section {
     padding: 0 2rem;
   }
