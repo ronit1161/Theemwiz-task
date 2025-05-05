@@ -305,7 +305,7 @@ header {
 .video{
   border-radius: 6px;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .video-content{
@@ -485,19 +485,6 @@ header {
   background-color: #28293E;
   border: none;
   cursor: pointer;
-}
-
-/* Responsive behavior */
-@media (max-width: 1024px) {
-  .team-card {
-    flex: 0 0 50%;
-  }
-}
-
-@media (max-width: 640px) {
-  .team-card {
-    flex: 0 0 80%;
-  }
 }
 
 /* ###### Get started section ####### */
