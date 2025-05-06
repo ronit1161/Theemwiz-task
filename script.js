@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const arrowIcon = item.querySelector(".arrow-icon");
 
     question.addEventListener("click", () => {
-      console.log("Clicked");
 
       // Close all items
       faqItems.forEach((i) => {
