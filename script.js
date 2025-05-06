@@ -1,7 +1,10 @@
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
-  item.querySelector(".faq-question").addEventListener("click", () => {
+  const question = item.querySelector(".faq-question");
+  const arrowIcon = item.querySelector(".arrow-icon");
+
+  question.addEventListener("click", () => {
     // Close all items
     faqItems.forEach((i) => {
       i.classList.remove("active");
@@ -10,18 +13,24 @@ faqItems.forEach((item) => {
 
     // Toggle current
     item.classList.add("active");
-    item.querySelector(".arrow-icon").src = "./assets/images/arrow-down.svg";
+    arrowIcon.src = "./assets/images/arrow-up.svg";  // Change the icon on active
   });
 });
-
-
 
 // Slider scroll logic
 function scrollSlider(direction) {
   const slider = document.getElementById("sliderWrapper");
   const cardWidth = slider.querySelector(".team-card").offsetWidth + 20;
-  slider.scrollBy({
-    left: direction * cardWidth,
-    behavior: 'smooth'
-  });
+
+  // Optional: prevent scrolling beyond the end of the slider
+  const maxScroll = slider.scrollWidth - slider.clientWidth;
+  const newScrollPosition = slider.scrollLeft + (direction * cardWidth);
+
+  // Scroll only if within bounds
+  if (newScrollPosition >= 0 && newScrollPosition <= maxScroll) {
+    slider.scrollBy({
+      left: direction * cardWidth,
+      behavior: 'smooth'
+    });
+  }
 }
