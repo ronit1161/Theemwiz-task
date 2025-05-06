@@ -359,17 +359,12 @@ header {
   margin: 7rem 0;
 }
 
-.tab-1{
+.tab-1,
+.tab-2 {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
 }
-
-.tab-2{
-  display: flex;
-  gap: 2rem;
-}
-
 
 .left-side-tab{
   position: relative;
@@ -634,7 +629,7 @@ header {
 }
 
 .popular {
-  background: #fff;/
+  background: #fff;
 }
 
 .popular h2{
