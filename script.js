@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const arrowIcon = item.querySelector(".arrow-icon");
 
     question.addEventListener("click", () => {
-
       // Close all items
       faqItems.forEach((i) => {
         i.classList.remove("active");
@@ -19,21 +18,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Slider scroll logic
-  function scrollSlider(direction) {
-    const slider = document.getElementById("sliderWrapper");
-    const cardWidth = slider.querySelector(".team-card").offsetWidth + 20;
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-    // Optional: prevent scrolling beyond the end of the slider
-    const maxScroll = slider.scrollWidth - slider.clientWidth;
-    const newScrollPosition = slider.scrollLeft + direction * cardWidth;
-
-    // Scroll only if within bounds
-    if (newScrollPosition >= 0 && newScrollPosition <= maxScroll) {
-      slider.scrollBy({
-        left: direction * cardWidth,
-        behavior: "smooth",
-      });
-    }
-  }
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
 });
+
+// Slider scroll logic
+function scrollSlider(direction) {
+  const slider = document.getElementById("sliderWrapper");
+  const cardWidth = slider.querySelector(".team-card").offsetWidth + 20;
+
+  // Optional: prevent scrolling beyond the end of the slider
+  const maxScroll = slider.scrollWidth - slider.clientWidth;
+  const newScrollPosition = slider.scrollLeft + direction * cardWidth;
+
+  // Scroll only if within bounds
+  if (newScrollPosition >= 0 && newScrollPosition <= maxScroll) {
+    slider.scrollBy({
+      left: direction * cardWidth,
+      behavior: "smooth",
+    });
+  }
+}

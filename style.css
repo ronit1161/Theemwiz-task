@@ -73,9 +73,15 @@ a{
 
 header {
   background-color: #28293e;
+  position: relative;
 }
 
 .navbar i{
+  display: none; 
+}
+
+/* Always hidden by default */
+.mobile-menu {
   display: none;
 }
 
@@ -125,8 +131,8 @@ header {
 }
 
 .hero-section {
-  padding-top: 13rem;
-  padding-bottom: 4rem;
+  padding-block-start: 13rem;
+  padding-block-end: 4rem;
   display: flex;
   gap: 4rem;
 }
@@ -198,10 +204,15 @@ header {
 .brands {
   border-bottom: 2px solid #f3d1bf;
   padding: 7rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
 }
 
-.brands img {
-  width: 100%;
+.brand-images{
+  width: fit-content;
 }
 
 /* ###### About section ####### */
@@ -804,13 +815,17 @@ header {
   font-size: 2rem;
 }
 
-.footer-content img:hover {
+.footer-content a:hover {
   cursor: pointer;
 }
 
 .footer-content {
   display: flex;
   gap: 1rem;
+}
+
+.footer-content a{
+  color: #FFFFFF;
 }
 
 .footer-links {

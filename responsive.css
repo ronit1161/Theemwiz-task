@@ -2,7 +2,6 @@
 @media (max-width: 768px) {
   /* ######### Landing Page########### */
 
-
   .navbar a,
   .nav-links,
   .star-svg,
@@ -14,15 +13,43 @@
     padding: 2rem;
   }
 
-  .navbar i{
-    display: block;
+  /* Hide nav-links and contact button on mobile by default */
+  .nav-links,
+  .btn-contact {
+    display: none;
   }
 
-  .fa-bars {
-    font-size: 3rem;
-    border: 1px solid rgba(255, 255, 255, 0.296);
-    padding: 1rem;
-    border-radius: 6px;
+  .navbar i {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #28293e;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.5rem 0;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+    gap: 4rem;
   }
 
   /* ################ Hero section ################ */
@@ -46,6 +73,11 @@
 
   .hero-small-div {
     margin-top: 5rem;
+  }
+
+  .brands {
+    margin: 0 2rem;
+    justify-content: space-around;
   }
 
   /* ################ About section ################ */
@@ -118,7 +150,6 @@
   .portfolio h1 {
     font-size: 4rem;
   }
-
 
   .left-side-tab,
   .right-side-tab {
@@ -197,7 +228,7 @@
     width: 100%;
   }
 
-  .contact-form-2 .contact-form{
+  .contact-form-2 .contact-form {
     width: 100%;
   }
 
